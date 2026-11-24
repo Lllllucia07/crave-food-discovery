@@ -1,0 +1,8 @@
+project_id = "crave"
+[auth]
+enable_anonymous_sign_ins = true
+enable_manual_linking = true
+[functions.fetch-places]
+verify_jwt = false
+[functions.recommend]
+verify_jwt = false
