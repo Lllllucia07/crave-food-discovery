@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Crave",
+    "slug": "crave-food-discovery",
+    "scheme": "crave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Crave uses your location to find places within a short walk."
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "name": "Crave",
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.crave.discovery",
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "en",
+        "CFBundleLocalizations": [
+          "en"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.crave.discovery"
+    }
+  }
+}
